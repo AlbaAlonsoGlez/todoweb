@@ -1,4 +1,4 @@
 package com.albaag.todoweb.task.exception;
 
-public class EmptyTaskListException {
+public class EmptyTaskListException  extends RuntimeException{
 }

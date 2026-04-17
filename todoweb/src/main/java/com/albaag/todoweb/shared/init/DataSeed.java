@@ -40,18 +40,18 @@ public class DataSeed {
         List<User> result = new ArrayList<>();
 
         CreateUserRequest req = CreateUserRequest.builder()
-                .username("Usuario")
-                .email("user@educastur.com")
+                .username("user")
+                .email("user@user.com")
                 .password("1234")
                 .verifyPassword("1234")
-                .fullname("El usuario")
+                .fullname("The user")
                 .build();
         User user = userService.registerUser(req);
         result.add(user);
 
         CreateUserRequest req2 = CreateUserRequest.builder()
                 .username("admin")
-                .email("admin@educastur.net")
+                .email("admin@admin.net")
                 .password("1234")
                 .verifyPassword("1234")
                 .fullname("Administrador")
